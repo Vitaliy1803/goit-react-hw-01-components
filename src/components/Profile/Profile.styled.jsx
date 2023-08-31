@@ -16,6 +16,7 @@ export const ProfileContainer = styled.div `
     margin: 0 auto;
     text-align: center;
     padding-bottom: 32px;
+    
 `;
 
 export const ProfileAvatar = styled.img `
