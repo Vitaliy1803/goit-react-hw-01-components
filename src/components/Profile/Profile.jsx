@@ -1,14 +1,16 @@
 import PropTypes, { shape } from 'prop-types';
+import { UserProfile } from './Profile.styled';
+import { ProfileContainer } from './Profile.styled';
 
 export const Profile = ({username, tag, location, avatar, stats}) => {
     return (
-        <div className="profile">
-            <div className="container">
+        <UserProfile>
+            <ProfileContainer>
             <img className="avatar" src={avatar} alt="User avatar" />
             <p className="username">{username}</p>
             <p className="tag">@{tag}</p>
             <p className="location">{location}</p>
-        </div>
+        </ProfileContainer>
 
         <ul className="stats">
     <li>
@@ -24,7 +26,7 @@ export const Profile = ({username, tag, location, avatar, stats}) => {
       <span className="quantity">{stats.likes}</span>
     </li>
   </ul>
-        </div>
+        </UserProfile>
 
     );
 };
